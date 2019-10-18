@@ -193,7 +193,7 @@ class FloatingView private constructor(private val context: Context) {
         fun message(message: CharSequence?) = this.also { mParams.message = message }
         fun message(@StringRes resId: Int) = this.also { mParams.message = context.resources.getString(resId) }
 
-        fun icon(bitmap: Drawable?) = this.also { mParams.icon = bitmap }
+        fun icon(drawable: Drawable?) = this.also { mParams.icon = drawable }
         fun icon(@DrawableRes resId: Int) = this.also { mParams.icon = ContextCompat.getDrawable(context, resId) }
 
         fun contentView(view: View?) = this.also { mParams.contentView = view }

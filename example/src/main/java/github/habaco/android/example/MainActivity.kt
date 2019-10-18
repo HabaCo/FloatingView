@@ -2,6 +2,7 @@ package github.habaco.android.example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import github.habaco.android.view.floating.FloatingUtil
@@ -29,17 +30,15 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         val grandPermission =
-            FloatingUtil.needToGrantOverlaysPermission(
-                this
-            ) {
+            FloatingUtil.needToGrantOverlaysPermission(this) {
                 AlertDialog.Builder(this)
-                    .setTitle("權限要求")
-                    .setMessage("請給予 " + resources.getString(R.string.app_name) + " 上層繪製權限以開啟懸浮視窗通知")
-                    .setPositiveButton("確認") { dialog, _ ->
+                    .setTitle("Permission require")
+                    .setMessage("Please enable \"Allow display over other apps\" to use floating window normally.")
+                    .setPositiveButton(android.R.string.ok) { dialog, _ ->
                         dialog.dismiss()
 
                         FloatingUtil.startSetting(this)
-                    }.setNegativeButton("離開") { dialog, _ ->
+                    }.setNegativeButton(android.R.string.cancel) { dialog, _ ->
                         dialog.dismiss()
                     }.setCancelable(false)
                     .show()

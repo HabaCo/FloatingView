@@ -59,4 +59,4 @@ val floatingView = builder.build()
 
 that's all
 
-<img src="preview/preview1.gif" title="with click on view" alt="drawing" width="250"/> <img src="preview/preview2.gif" title="without click on view" alt="drawing" width="250"/>
+<img src="preview/preview1.gif" title="with click on view" alt="drawing" width="250"/> <img src="preview/preview2.gif" title="without click on view" alt="drawing" width="250"/> <img src="preview/preview3.gif" title="without click on view" alt="drawing" width="250"/>

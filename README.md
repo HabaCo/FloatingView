@@ -1,6 +1,20 @@
 # FloatingView
  A simple util to generate floating view with default style or simply custom function
 
+Maven
+
+    <dependency>
+      <groupId>github.habaco.view</groupId>
+      <artifactId>view-floating</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
+    </dependency>
+
+
+Gradle
+
+    implementation 'github.habaco.view:view-floating:1.0.0'
+
 ### Check canDrawOverlays
  FloatingUtil provides a simple util with compat function to check canDrawOverlay
  ```kotlin

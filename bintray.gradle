@@ -8,4 +8,6 @@ publish {
     publishVersion = '1.0.0'
     desc = 'A simple util to generate floating view with default style or simply custom function'
     website = "https://github.com/HabaCo/FloatingView"
+    licences = ['MIT']
+    dryRun = false
 }

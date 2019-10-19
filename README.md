@@ -34,7 +34,7 @@ FloatingUtil provides a simple util can navigate user go to settings with "Allow
 FloatingView design with Builder
 > FloatingView 提供一個 Builder
 ```kotlin
-  val builder = FloatingView.Builder(this)  
+  val builder = FloatingView.Builder(context)  
 ```
  
 You can set attributes with this builder, and you can simply give few data to use default style.

@@ -69,3 +69,7 @@ that's all
 > 結束
 
 <img src="preview/preview1.gif" title="with click on view" alt="drawing" width="250"/> <img src="preview/preview2.gif" title="without click on view" alt="drawing" width="250"/> <img src="preview/preview3.gif" title="without click on view" alt="drawing" width="250"/>
+
+## Notice
+Beacuase __floating-view__ is managed by WindowManager, it can exisit even when app process is killed, In this case we will lose the reference with __floating-view__ eventually, so you need to hold the reference carefully, or you can add some control behavior to __floating-view__, such as ***remove self from WindowManager***.
+> 因為 __lofating-view__ 是被 WindowManager 所管理，甚至可以在 app 的程序關閉時還存在，在這個情況下我們最終將失去 __floating-view__ 的參照位置，所以需要小心地持有 __floating-view__ 的參照位置，或是加上一些行為給 __floating-view__ ，例如 ***從 WindowManager 移除自己***

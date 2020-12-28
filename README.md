@@ -4,13 +4,8 @@ A simple util to generate floating view with default style easily or custom view
 
 ## Gradle
 
-Bintray
-
     implementation 'github.habaco.view:view-floating:1.0.0'
 
-Jitpack
-    
-    implementation 'com.github.HabaCo:FloatingView:1.0.0'
     
 ### Check canDrawOverlays
  FloatingUtil provides a simple util with compat function to check canDrawOverlay

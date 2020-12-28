@@ -2,20 +2,16 @@
 A simple util to generate floating view with default style easily or custom view style easily.
 > 一個可使用預設風格直接產生懸浮視窗；或是自訂內容的工具集
 
-Maven
+## Gradle
 
-    <dependency>
-      <groupId>github.habaco.view</groupId>
-      <artifactId>view-floating</artifactId>
-      <version>1.0.0</version>
-      <type>pom</type>
-    </dependency>
-
-
-Gradle
+Bintray
 
     implementation 'github.habaco.view:view-floating:1.0.0'
 
+Jitpack
+    
+    implementation 'com.github.HabaCo:FloatingView:1.0.0'
+    
 ### Check canDrawOverlays
  FloatingUtil provides a simple util with compat function to check canDrawOverlay
  > FloatingUtil 提供一個快速的 compat function 用以確認是否能在上層繪製

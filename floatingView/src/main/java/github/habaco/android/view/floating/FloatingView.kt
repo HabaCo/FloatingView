@@ -57,7 +57,6 @@ class FloatingView private constructor(private val context: Context) {
             } else {
                 contentView.height
             }
-        Log.i(">>>>", "onShow offset:${slideOffset}")
 
         val animatorSlide =
             AnimatorUtil.buildSimpleSlideAnimator(

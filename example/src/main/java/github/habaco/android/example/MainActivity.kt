@@ -4,23 +4,27 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import github.habaco.android.example.databinding.ActivityMainBinding
 import github.habaco.android.view.floating.FloatingUtil
 import github.habaco.android.view.floating.FloatingView
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
 
     var notification: FloatingView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        buttonShow?.setOnClickListener {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.buttonShow.setOnClickListener {
             notification?.show()
         }
 
-        buttonHide?.setOnClickListener {
+        binding.buttonHide.setOnClickListener {
             notification?.hide()
         }
     }
